@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter);
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.3; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  margin: 0;
+  padding: 0; }
+
+ol {
+  margin: 0;
+  padding: 0; }
+
+p {
+  padding: 0;
+  margin: 0px 0px 5px 0px;
+  margin: 0rem 0rem 0.3125rem 0rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0px 0px 10px 0px;
+  margin: 0rem 0rem 0.625rem 0rem;
+  font-weight: normal; }
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0; }
+
+button {
+  cursor: pointer; }
+
+.container {
+  width: 100%; }
+
+.half-width-m {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  width: 50%; }
+
+.three-quarters-width-m {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  width: 76.92308%; }
+
+.content-center {
+  text-align: center; }
+
+.content-left {
+  text-align: left; }
+
+.content-right {
+  text-align: right; }
+
+.content-justify {
+  text-align: justify; }
+
+* {
+  font-family: "Bitter", Helvetica;
+  box-sizing: border-box;
+  margin-top: 2%; }
+
+*:focus {
+  outline: 0; }
+
+h1 {
+  font-size: 50px;
+  font-size: 3.125rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+.next-button {
+  font-size: 30px;
+  font-size: 1.875rem;
+  border-radius: 5px;
+  margin-top: 2%;
+  padding: 1% 3%; }

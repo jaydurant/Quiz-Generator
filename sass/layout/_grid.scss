@@ -1,0 +1,35 @@
+.container{
+	width: $full-width;
+}
+
+.half-width-m{
+	@include inline-block();
+	width: $full-width / 2;
+}
+
+.three-quarters-width-m{
+	@include inline-block();
+	width: $full-width / 1.3;
+}
+
+
+//align content ---------------------------------
+
+.content-center{
+	@include align(center);
+}
+
+.content-left{
+	@include align(left);
+}
+
+.content-right{
+	@include align(right);
+}
+
+.content-justify{
+	@include align(justify);
+}
+
+
+

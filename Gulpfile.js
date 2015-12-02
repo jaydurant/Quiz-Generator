@@ -6,6 +6,7 @@ var concat = require('gulp-concat');
 
 gulp.task('styles',function(){
 	gulp.src('sass/**/*.scss')
+		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer())
 		.pipe(concat('style.css'))
