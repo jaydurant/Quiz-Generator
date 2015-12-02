@@ -28,17 +28,23 @@
 * {
 	font-family: $bitter;
 	@include box-sizing(border-box);
-	margin-top: 2%;
 }
 
 *:focus{
 	outline:0;
 }
 
+header{
+	margin-top: 10%;
+}
 
 h1 {
 	@include rem("font-size", $largerSize);
 	@include margin-auto();
+}
+
+.quote-text{
+	@include rem("font-size", $midlargeSize);
 }
 
 
@@ -47,7 +53,5 @@ h1 {
 	@include roundedCorners(5);
 	margin-top: 2%;
 	padding: 1% 3%;
-
-
 
 }
