@@ -1,13 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Bitter);
 html {
-  font-size: 62.5%; }
+  font-size: 80%; }
 
 body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-size: 28px;
-  font-size: 1.75rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.3; }
 
@@ -78,8 +78,7 @@ button {
   font-family: "Bitter", Helvetica;
   box-sizing: border-box; }
 
-*:focus {
-  outline: 0; }
+
 
 header {
   margin-top: 10%; }
@@ -91,8 +90,8 @@ h1 {
   margin-right: auto; }
 
 .quote-text {
-  font-size: 35px;
-  font-size: 2.1875rem; }
+  font-size: 28px;
+  font-size: 1.75rem; }
 
 .next-button {
   font-size: 30px;
