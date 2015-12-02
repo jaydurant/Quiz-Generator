@@ -78,7 +78,8 @@ button {
   font-family: "Bitter", Helvetica;
   box-sizing: border-box; }
 
-
+*:focus {
+  outline: 0; }
 
 header {
   margin-top: 10%; }
