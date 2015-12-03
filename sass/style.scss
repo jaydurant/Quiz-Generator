@@ -21,6 +21,7 @@
 // ----------------------------------------------------------------------
 @import "modules/animation";
 @import "modules/footer";
+@import "modules/links";
 
 // ----------------------------------------------------------------------
 	// Themes
@@ -30,20 +31,30 @@
 * {
 	font-family: $bitter;
 	@include box-sizing(border-box);
-	border: thin solid black;
 }
 
 *:focus{
 	outline:0;
 }
 
+html,body{
+	height:100%;
+}
+
+body{
+	background-image:radial-gradient( circle farthest-corner at 7% 7%, #FFF 3%,#BDD7FF 80%,#5D758E 98%);
+}
+
+
 header{
-	margin-top: 10%;
+	padding-top: 10%;
 }
 
 h1 {
 	@include rem("font-size", $largestSize);
 	@include margin-auto();
+	@include single-text-shadow(0px, 3px, 1px, #D6B679 );
+	color: $text-color;
 
 	@include breakpoint($sassySmall){
 		@include rem("font-size",$largeSize)
@@ -53,6 +64,8 @@ h1 {
 h3{
 	@include rem("font-size", $midlargeSize)
 
+	color: $text-color;
+
 	@include breakpoint($sassySmall){
 		@include rem("font-size", $regularSize);
 	}
@@ -60,19 +73,35 @@ h3{
 
 .quote-container{
 	@include rem("font-size", $midlargeSize);
-
+	@include roundedCorners(5);
+	@include box-shadow(3px, 4px, 3px, 2px, #555);
+	color: $text-color;
+	background-color:#fff;
+	background-color: rgba(255, 255, 255, 0.68);
+	padding: 1% 0;
 	@include breakpoint($sassySmall){
 		@include rem("font-size", $regularSize);
 	}
+
+	p:last-child{
+		@include inline-block(); 
+		border-top: 1px solid #000;
+	}
 }
-
-
-
 
 .next-button{
 	@include rem("font-size", $buttonSize);
 	@include roundedCorners(5);
+	@include box-shadow(1px, 4px, 1px, 1px, #4E2C01);
+	color: $text-color;
+	border:1px solid #D6B679;
+	background-color: #D6B679;
 	margin-top: 2%;
 	padding: 1% 3%;
+
+	&:active,:focus {
+		transform:translate(1px,2px);
+		@include box-shadow(0px, 2px, 1px, 1px, #4E2C01);
+	}
 
 }
