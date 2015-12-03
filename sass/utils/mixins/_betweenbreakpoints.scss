@@ -4,9 +4,7 @@
 
 // ----------------------------------------------------------------------
 
-// example @include breakpoint(940) { width:80%; }
-
-@mixin breakpoint($size) {
-  @media only screen and (max-width: $size + px) { @content; }
+@mixin betweenbreakpoints($sizeStart,$sizeEnd){
+	@media only screen and (min-width: $sizeStart + 1px) and (max-width:$sizeEnd - 1px)
+	{ @content; }
 }
-

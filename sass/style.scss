@@ -19,6 +19,8 @@
 // ----------------------------------------------------------------------
   // Modules
 // ----------------------------------------------------------------------
+@import "modules/animation";
+@import "modules/footer";
 
 // ----------------------------------------------------------------------
 	// Themes
@@ -28,6 +30,7 @@
 * {
 	font-family: $bitter;
 	@include box-sizing(border-box);
+	border: thin solid black;
 }
 
 *:focus{
@@ -39,13 +42,31 @@ header{
 }
 
 h1 {
-	@include rem("font-size", $largerSize);
+	@include rem("font-size", $largestSize);
 	@include margin-auto();
+
+	@include breakpoint($sassySmall){
+		@include rem("font-size",$largeSize)
+	}
 }
 
-.quote-text{
-	@include rem("font-size", $midlargeSize);
+h3{
+	@include rem("font-size", $midlargeSize)
+
+	@include breakpoint($sassySmall){
+		@include rem("font-size", $regularSize);
+	}
 }
+
+.quote-container{
+	@include rem("font-size", $midlargeSize);
+
+	@include breakpoint($sassySmall){
+		@include rem("font-size", $regularSize);
+	}
+}
+
+
 
 
 .next-button{

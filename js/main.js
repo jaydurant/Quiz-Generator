@@ -15,16 +15,27 @@ function changeQuestion(){
 	var questionLength = quoteArray.length;
 	var randNumber = Math.floor(Math.random() * questionLength);
 
+	//change visibility
+	
 	if(currentQuote === randNumber){
-		changeQuestion();
+		return changeQuestion();
 	}
-	else{
-		//change visibility 
+
+	document.getElementById("quote-container").classList.add("visible-hidden");
+	document.getElementById("quote-container").classList.remove("visible-shown");
+	
+
+
+	//show visibility
+	setTimeout(function(){
 		document.getElementById("quote-text").innerHTML = quoteArray[randNumber]["quote-text"]; 
 		document.getElementById("quote-author").innerHTML = quoteArray[randNumber]["quote-author"];
-		//show visibility
+
+		document.getElementById("quote-container").classList.remove("visible-hidden");
+		document.getElementById("quote-container").classList.add("visible-shown");
 		currentQuote = randNumber;
-	}
+	},500);	
+
 }
 function HttpRequest(sUrl,fpCallback){
 	request = new XMLHttpRequest();

@@ -10,6 +10,7 @@
 // ----------------------------------------------------------------------
 @import "mixins/margin-auto";
 @import "mixins/align-text";
+@import "mixins/positioning";
 
 // ----------------------------------------------------------------------
 
@@ -59,6 +60,7 @@
 
 // ----------------------------------------------------------------------
 @import "mixins/breakpoint";
+@import "mixins/betweenbreakpoints";
 @import "mixins/min-breakpoint";
 @import "mixins/retina";
 

@@ -1,0 +1,19 @@
+footer{
+	@include absolute();
+	bottom:0;
+
+	li{
+		@include inline-block()
+	}
+
+	li~li{
+		margin-left:1%;
+
+		span{
+			margin: 0 10px 0 8px;
+			color:black;
+		}
+	}
+		
+}
+

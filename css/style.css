@@ -40,10 +40,38 @@ fieldset {
   margin: 0;
   padding: 0; }
 
+blockquote {
+  margin: 0;
+  padding: 0; }
+
 button {
   cursor: pointer; }
 
 .container {
+  width: 100%; }
+
+.half-width-s {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  width: 50%; }
+
+.three-quarters-width-s {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  width: 76.92308%; }
+
+.full-width-s {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
   width: 100%; }
 
 .half-width-m {
@@ -62,6 +90,107 @@ button {
   *display: inline;
   width: 76.92308%; }
 
+.full-width-m {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  width: 100%; }
+
+.half-width-l {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  width: 50%; }
+
+.three-quarters-width-l {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  width: 76.92308%; }
+
+.full-width-l {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  width: 100%; }
+
+@media only screen and (max-width: 600px) {
+  .half-width-s {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    width: 50%; }
+  .three-quarters-width-s {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    width: 76.92308%; }
+  .full-width-s {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    width: 100%; } }
+
+@media only screen and (min-width: 601px) and (max-width: 1039px) {
+  .half-width-m {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    width: 50%; }
+  .three-quarters-width-m {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    width: 76.92308%; }
+  .full-width-m {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    width: 100%; } }
+
+@media only screen and (min-width: 1040px) {
+  .half-width-l {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    width: 50%; }
+  .three-quarters-width-l {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    width: 76.92308%; }
+  .full-width-l {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    width: 100%; } }
+
 .content-center {
   text-align: center; }
 
@@ -74,9 +203,57 @@ button {
 .content-justify {
   text-align: justify; }
 
+.visible-hidden {
+  -webkit-animation: 0.5s linear 0s 1 normal forwards running visible-hidden;
+  animation: 0.5s linear 0s 1 normal forwards running visible-hidden; }
+
+@-webkit-keyframes visible-hidden {
+  from {
+    opacity: 1.0; }
+  to {
+    opacity: 0.0; } }
+
+@keyframes visible-hidden {
+  from {
+    opacity: 1.0; }
+  to {
+    opacity: 0.0; } }
+
+.visible-shown {
+  -webkit-animation: 0.5s linear 0s 1 normal forwards running visible-shown;
+  animation: 0.5s linear 0s 1 normal forwards running visible-shown; }
+
+@-webkit-keyframes visible-shown {
+  from {
+    opacity: 0.0; }
+  to {
+    opacity: 1.0; } }
+
+@keyframes visible-shown {
+  from {
+    opacity: 0.0; }
+  to {
+    opacity: 1.0; } }
+
+footer {
+  position: absolute;
+  bottom: 0; }
+  footer li {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline; }
+  footer li ~ li {
+    margin-left: 1%; }
+    footer li ~ li span {
+      margin: 0 10px 0 8px;
+      color: black; }
+
 * {
   font-family: "Bitter", Helvetica;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: thin solid black; }
 
 *:focus {
   outline: 0; }
@@ -89,10 +266,26 @@ h1 {
   font-size: 3.125rem;
   margin-left: auto;
   margin-right: auto; }
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 40px;
+      font-size: 2.5rem; } }
 
-.quote-text {
+h3 {
   font-size: 28px;
   font-size: 1.75rem; }
+  @media only screen and (max-width: 600px) {
+    h3 {
+      font-size: 20px;
+      font-size: 1.25rem; } }
+
+.quote-container {
+  font-size: 28px;
+  font-size: 1.75rem; }
+  @media only screen and (max-width: 600px) {
+    .quote-container {
+      font-size: 20px;
+      font-size: 1.25rem; } }
 
 .next-button {
   font-size: 30px;
