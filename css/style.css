@@ -220,8 +220,8 @@ button {
     opacity: 0.0; } }
 
 .visible-shown {
-  -webkit-animation: 0.5s linear 0s 1 normal forwards running visible-shown;
-  animation: 0.5s linear 0s 1 normal forwards running visible-shown; }
+  -webkit-animation: 0.5s linear 1s 1 normal forwards running visible-shown;
+  animation: 0.5s linear 1s 1 normal forwards running visible-shown; }
 
 @-webkit-keyframes visible-shown {
   from {
