@@ -26,7 +26,9 @@ function changeQuestion(){
 	}
 	//hides the current quote by adding the visible-hidden class which fades the quote text in 500ms
 	document.getElementById("quote-container").classList.add("visible-hidden");
-	document.getElementById("quote-container").classList.remove("visible-shown");
+	if(document.getElementById("quote-container").classList.contains("visible-shown")){
+		document.getElementById("quote-container").classList.remove("visible-shown");
+	}
 	
 
 
@@ -34,7 +36,7 @@ function changeQuestion(){
 	setTimeout(function(){
 		
 
-		//document.getElementById("quote-container").classList.remove("visible-hidden");
+		document.getElementById("quote-container").classList.remove("visible-hidden");
 		document.getElementById("quote-container").classList.add("visible-shown");
 		document.getElementById("quote-text").innerHTML = quoteArray[randNumber]["quote-text"]; 
 		document.getElementById("quote-author").innerHTML = quoteArray[randNumber]["quote-author"];

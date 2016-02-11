@@ -220,6 +220,7 @@ button {
     opacity: 0.0; } }
 
 .visible-shown {
+  opacity: 0.0;
   -webkit-animation: 0.5s linear 1s 1 normal forwards visible-shown;
   animation: 0.5s linear 1s 1 normal forwards visible-shown; }
 
