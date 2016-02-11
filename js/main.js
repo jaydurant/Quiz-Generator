@@ -34,8 +34,8 @@ function changeQuestion(){
 	setTimeout(function(){
 		
 
-		document.getElementById("quote-container").classList.remove("visible-hidden");
-		document.getElementById("quote-container").classList.add("visible-shown");
+		//document.getElementById("quote-container").classList.remove("visible-hidden");
+		//document.getElementById("quote-container").classList.add("visible-shown");
 		//document.getElementById("quote-text").innerHTML = quoteArray[randNumber]["quote-text"]; 
 		//document.getElementById("quote-author").innerHTML = quoteArray[randNumber]["quote-author"];
 		currentQuote = randNumber;
