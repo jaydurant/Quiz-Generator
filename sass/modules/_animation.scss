@@ -1,7 +1,7 @@
 //Contains animation classes which interact with html elements---------------------------
 
 .visible-hidden{
-	@include animation( 0.5s linear 0s 1 normal forwards running visible-hidden)
+	@include animation( 0.5s linear 0s 1 normal forwards visible-hidden)
 }
 
 @include keyframes(visible-hidden){
@@ -10,7 +10,7 @@
 }
 
 .visible-shown{
-	@include animation( 0.5s linear 1s 1 normal forwards running visible-shown)
+	@include animation( 0.5s linear 1s 1 normal forwards visible-shown)
 }
 
 @include keyframes(visible-shown){
