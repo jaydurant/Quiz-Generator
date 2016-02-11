@@ -32,11 +32,12 @@ function changeQuestion(){
 
 	//setTimeout is set to 500ms, after which the following anonymous function will execute which inserts the new HTML and fades in the text by adding the visible shown class
 	setTimeout(function(){
-		document.getElementById("quote-text").innerHTML = quoteArray[randNumber]["quote-text"]; 
-		document.getElementById("quote-author").innerHTML = quoteArray[randNumber]["quote-author"];
+		
 
 		document.getElementById("quote-container").classList.remove("visible-hidden");
 		document.getElementById("quote-container").classList.add("visible-shown");
+		document.getElementById("quote-text").innerHTML = quoteArray[randNumber]["quote-text"]; 
+		document.getElementById("quote-author").innerHTML = quoteArray[randNumber]["quote-author"];
 		currentQuote = randNumber;
 	},500);	
 
