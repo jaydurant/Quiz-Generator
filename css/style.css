@@ -255,11 +255,7 @@ footer {
 i {
   padding-right: 7px; }
 
-@media screen and (max-height: 350px) {
-  footer {
-    position: relative; } }
-
-@media only screen and (max-width: 600px) {
+@media screen and (max-height: 420px) {
   footer {
     position: relative; } }
 

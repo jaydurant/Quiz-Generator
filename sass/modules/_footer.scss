@@ -25,15 +25,8 @@ i{
 	padding-right:7px;
 }
 
-@media screen and (max-height:350px){
+@media screen and (max-height:420px){
 	footer{
 		position:relative;
 	}
-}
-
-@include breakpoint($sassySmall){
-	footer{
-		position:relative;
-	}
-
 }
